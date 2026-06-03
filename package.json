@@ -1,0 +1,39 @@
+{
+  "name": "@your-org/slidev-theme-company",
+  "version": "0.1.0",
+  "private": false,
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": ["slidev-theme", "slidev"],
+  "files": [
+    "layouts",
+    "components",
+    "styles",
+    "setup",
+    "*.vue",
+    "*.ts",
+    "*.js",
+    "*.css",
+    "README.md",
+    "package.json"
+  ],
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 980
+    }
+  },
+  "engines": {
+    "slidev": ">=0.48.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.53.0"
+  },
+  "scripts": {
+    "dev": "slidev slides.md",
+    "build": "slidev build slides.md"
+  }
+}
